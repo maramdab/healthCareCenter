@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./CSS/navAndFooter.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header>
-        <img id="logo" src="./media/logo1.avif" alt="logo">
-        <h1 id="webTitle">Al-Shefa'a Medical Center
-        </h1>
-        <span id="symbol1" onclick="openNav()">&#9776; </span>
-       
-        <ul id="mySidenav" class="sidenav">
-            <span id="closebtn"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
-            <span id="loginBtn"><a href="./pages/Login.html"><i style="font-size:24px" class="fa">&#xf2be;</i>Login </a></span>
-            <li class="linkNav"><a href="./index.html">Home</a></li>
-            <li class="linkNav"><a href="">Services</a></li>
-            <li class="linkNav"><a href="">patient Info</a></li>
-            <li class="linkNav"><a href="">Fourm</a></li>
-            <li class="linkNav"><a href="">Contact Us</a></li>
-        </ul>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="navLogo">
+                <h1>AL-Shefa Medical Center</h1>
+            </div>
+            <div class="navMenu">
+                <ul>
+                    <li><a href="./index.html" class="link">Home</a></li>
+                    <li><a href="" class="link">services</a></li>
+                    <li><a href="./pages/patientInfo.html" class="link">Patient Info</a></li>
+                    <li><a href="#" class="link">Contact Us</a></li>
 
-    </header>
+                </ul>
+            </div>
+            <div class="navBtn">
+                <button class="btn white-button" id="loginBtn">Sign In</button>
+                <button class="btn" id="registerBtn">Sign Up</button>
+            </div>
+            <div class="navMenuBtn">
+                <i class="bx bx-menu"></i>
+            </div>
 
-    <section>
+        </nav>
+    </div>
 
-    </section>
-
-    <footer>
-
-    </footer>
-   
-    <script src="./JS/navAndFooter.js"></script>
 </body>
+
 </html>

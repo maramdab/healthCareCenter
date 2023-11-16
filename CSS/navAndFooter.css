@@ -1,267 +1,94 @@
-/* CSS file for header and footer */
- * {
-     margin: 0px;
-     padding: 0px;
-     font-family: poppins;
-     box-sizing: border-box;
-     scroll-behavior: smooth;
- }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-header{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: url("../media/medical1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(220, 212, 212, 0.4);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 100px;
-    background-color: white;
-    border: 2px solid midnightblue;
-    position: fixed;
-   
+    line-height: 100px;
+    background: linear-gradient(rgba(129, 127, 127, 0.6), transparent);
+    z-index: 100;
 }
 
-#logo{
-    width: 100px;
-    height: 95px;
-    float: left;
-    border-right: 2px solid midnightblue;
-}
-#webTitle{
-    color: rgb(18, 40, 59);
-    margin-top: 40px;
-    margin-left: 20px;
-    float: left;
-    font-size: 15px;
-    font-family:sans-serif;
-    margin-right: 20px;
-    font-weight: bold ;
-   
-    
+.navLogo h1 {
+    color: rgba(33, 33, 140);
+    font-size: 25px;
+    font-weight: 600;
 }
 
-#symbol1{
-    font-size:40px;
-    cursor:pointer;
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: midnightblue;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 50px;
-    list-style: none;
-    padding-left: 0px;
-    margin-top: 0px;
-    text-align: end;
-  
-}
- span#loginBtn {
-    display:block;
-    padding: 5px;
-    border-bottom: 1px solid;
-   
+.navMenu ul {
+    display: flex;
 }
 
-.sidenav a {
-    padding: 8px 8px 5px 32px;
+.navMenu ul li {
+    list-style-type: none;
+}
+
+.navMenu ul li .link {
     text-decoration: none;
-    font-size: 20px;
-    color:whitesmoke;
-    display: block;
-    transition: 0.3s;
-    margin-right: 20px ;
-    
-  
-}
-.sidenav a:hover {
-    color: midnightblue;
-    background-color: whitesmoke;
-    border-radius: 5px;
-}
-.sidenav a:active {
-    color: rgb(145, 133, 211);
-    background-color: rgb(16, 3, 3);
-}
-.linkNav{
-    border-bottom: 1px solid rgb(18, 40, 59);
-    
+    font-weight: 500;
+    color: rgba(33, 33, 140, 1);
+    padding-bottom: 15px;
+    margin: 0 25px;
 }
 
-
-
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: -2px;
-    font-size: 30px;
-    margin-left: 50px;
-    
+.link:hover,
+:active {
+    border-bottom: 2px solid rgba(33, 33, 140);
 }
 
-
-
-@media only screen and (min-device-width: 800px) {
-
-    #symbol1 {
-        display: none;
-    }
-
-    #closebtn {
-        display: none;
-    }
-
-    #webTitle {
-        margin-top: 40px;
-        font-size: 16px;
-    }
-
-    .sidenav {
-        float: right;
-        margin-right: 20px;
-        width: 500px;
-        background: none;
-        margin-top: 20px;
-        padding-top: 0px;
-        margin-top: 30px;
-        display: block;
-        height: auto;
-        overflow: none;
-
-    }
-
-    span#loginBtn {
-        background-color: none;
-        border-bottom: 0px;
-        float: inline-end;
-        
-    }
-
-    #loginBtn a {
-        color: midnightblue;
-    }
-
-    .linkNav {
-        display: inline-block;
-        margin-top: 10px;
-        border: 2px solid;
-        border-radius: 5px;
-
-    }
-
-    .linkNav a {
-        padding: 8px 8px 8px 8px;
-        font-size: 10px;
-        color: whitesmoke;
-        background-color: midnightblue;
-        margin-right: 0px;
-        box-shadow: inset;
-
-    }
+.navBtn .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(71, 71, 111, 0.5);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
 
 }
 
-/* CSS for Tablet view */
-@media only screen and (min-device-width: 1030px){
-   
-    #symbol1{
-       display:none;
-    }
-    #closebtn{
-        display: none;
-    }
-    #webTitle{
-        margin-top: 40px;
-        font-size: 25px;
-    }
-    .sidenav{
-        float:right;
-        margin-right: 20px;
-        width: auto;
-        background:none;
-        margin-top: 20px;
-        padding-top: 0px;
-        margin-top: 30px;
-        display: block;
-        height: auto;
-        overflow:none;
-        
-    }
-    span#loginBtn {
-        background-color: none;
-        border-bottom: 0px;
-        float: inline-end;
-         }
-    
-    #loginBtn a {
-            color: midnightblue;
-         }
-    .linkNav {
-       display: inline-block;
-       margin-top: 10px;
-       border: 2px  solid;
-       border-radius: 5px;
-       
-         }
-    .linkNav a{
-     padding: 8px 8px 8px 8px;
-     font-size: 15px;
-     color: whitesmoke;
-    background-color: midnightblue;
-    margin-right: 0px;
-    
-         }
- 
+.btn:hover {
+    background: rgba(71, 71, 111, 0.3);
 }
 
-/*  CSS for Desktop view */
-
-
-@media only screen and (max-width:405px) {
-    #symbol1 {
-        font-size: 30px;
-        margin-top: 20px;
-     
-    }
-    header{
-        height: 80px;
-    }
-
-    #webTitle {
-        font-size: 13px;
-        margin-right: 5px;
-        margin-top: 30px;
-        margin-left: 5px;
-    }
-    #logo{
-        width:80px;
-        height: 75px;
-    }
+#registerBtn {
+    margin-left: 15px;
 }
-@media only screen and (max-width:405px) {
-    #symbol1 {
-        font-size: 25px;
-        margin-top: 20px;
 
-    }
+.btn.white-button {
+    background: rgba(71, 71, 111, 0.7);
+}
 
-    header {
-        height: 70px;
-    }
+.btn.white-button:hover {
+    background: rgba(71, 71, 111, 0.5);
+}
 
-    #webTitle {
-        font-size: 10px;
-        margin-right: 5px;
-        margin-top: 30px;
-        margin-left: 5px;
-    }
-
-    #logo {
-        width: 60px;
-        height: 65px;
-    }
+.navMenuBtn {
+    display: none;
 }
