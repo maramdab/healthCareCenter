@@ -32,55 +32,33 @@
 
     </nav>
     <!-- form box -->
-    <form class="formBox" id="formBox" >
-        <!----------------------Login box--------------------------->
-        <div class="loginContainer" id="login">
-            <div class="top">
-                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
-                <header>Login</header>
-            </div>
-            <div class="inputBox">
-                <input type="email" class="inputField" placeholder="UserName or Emial">
-                <i class="bx bx-user"></i>
-            </div>
-            <div class="inputBox">
-                <input type="password" class="inputField" placeholder="Password">
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="inputBox">
-                <input type="submit" class="submit" value="Sign in">
-            </div>
-            <div class="twoCol">
-                <div class="one">
-                    <input type="checkbox" id="loginCheck">
-                    <label for="loginCheck">Remember me</label>
-                </div>
-                <div class="two">
-                    <label><a href="#">Forgot password?</a></label>
-                </div>
-            </div>
-        </div>
+    <form class="formBox"  >
+        
         <!----------------------Register box--------------------------->
-       <div class="registerContainer"  id="register">
+       <div class="registerContainer" aria-autocomplete=""  >
             <div class="top">
                 <span>Have an account? <a href="#" onclick="login()">Login</a></span>
                 <header>Sign up</header>
             </div>
             
             <div class="inputBox">
+                <label for="userName"></label>
                 <input type="text" class="inputField" id="userName" placeholder="UserName" required>
                 <i class="bx bx-user"></i>
             </div>  
         
             <div class="inputBox">
+                <label for="regEmial"></label>
                 <input type="email" class="inputField" id="regEmial"placeholder="Email" required>
                 <i class="bx bx-envelope"></i>
             </div>
             <div class="inputBox">
+                <label for="regPass"></label>
                 <input type="password" class="inputField" id="regPass" placeholder="Password" required>
                 <i class="bx bx-lock-alt"></i>
             </div>
             <div class="inputBox">
+                <label for="confirmPass"></label>
                 <input type="password" class="inputField" id="confirmPass" placeholder="confirmPassword" required>
                 <i class="bx bx-lock-alt"></i>
             </div>
@@ -99,7 +77,7 @@
        </div>
     </form>
    </div>
-   <script src="../JS/loginAndRegister.js"></script>
+   <script src="../JS/register.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login and Regiteration</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../CSS/register.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="navLogo">
+                <h1>AL-Shefa Medical Center</h1>
+            </div>
+            <div class="navMenu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="link active">Home</a></li>
+                    <li><a href="#" class="link">services</a></li>
+                    <li><a href="#" class="link">Patient Info</a></li>
+                    <li><a href="#" class="link">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="navBtn">
+                <button class="btn white-button" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="navMenuBtn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+
+        </nav>
+        <!-- form box -->
+        <form class="formBox">
+            <!----------------------Login box--------------------------->
+            <div class="loginContainer" id="login">
+                <div class="top">
+                    <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                    <header>Login</header>
+                </div>
+                <div class="inputBox">
+                    <input type="email" class="inputField" placeholder="UserName or Emial">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" class="inputField" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" class="submit" value="Sign in">
+                </div>
+                <div class="twoCol">
+                    <div class="one">
+                        <input type="checkbox" id="loginCheck">
+                        <label for="loginCheck">Remember me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Forgot password?</a></label>
+                    </div>
+                </div>
+            </div>
+           
+        </form>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
