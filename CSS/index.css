@@ -1,14 +1,6 @@
 
-* {
-        word-wrap: break-word;
-        box-sizing: border-box;
-    }
-body {
-    background: url("../media/medical1.jpg");
-    background-size: cover;
-    background-repeat:repeat;
-    background-attachment: fixed;
-}
+
+
 #mainDiv{
     position: absolute;
     left: 200px;

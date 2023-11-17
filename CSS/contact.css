@@ -1,0 +1,130 @@
+#contactInfo{
+    align-items: center;
+    margin-top: -250px;
+    width: 600px;
+
+  
+}
+#pageTitle{
+        border-bottom: 1px solid rgba(205, 209, 212, 0.4);
+        padding: 0px 0;
+        text-align: center;
+        background-size: cover;
+        position: relative;
+        /* margin-top: -200px; */
+        color: rgba(33, 33, 140);
+            opacity: 1;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 0;
+            padding: 0px 0px 5px;
+}
+#pageParagraph{
+    border-bottom: 1px solid rgba(205, 209, 212, 0.4);
+        padding: 50px 0;
+        text-align: center;
+        position: relative;
+        margin-top: -200px;
+        color: rgba(33, 33, 140);
+        font-weight: 300;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0px 0px 5px;
+        font-size: 16px;
+}
+/* #contactForm {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 500px;
+    overflow: hidden;
+    z-index: 2;
+} */
+#contactForm{
+    position: absolute; 
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+    left: 100px;
+
+}
+.inputField {
+
+    font-size: 15px;
+    background: rgba(245, 245, 253, 0.9);
+    color: rgba(33, 33, 140, 1);
+    height: 40px;
+    width: 100%;
+    padding: 0 10px 0 0px;
+    border: none;
+    /* border-radius: 30px; */
+    outline: none;
+    transition: .2s ease;
+}
+#message{
+    height: 60px;
+}
+.inputField:hover,
+.inputField:focus {
+    background: rgba(71, 71, 111, 0.25);
+}
+
+::-webkit-input-placeholder {
+    color: rgba(33, 33, 140, 1);
+}
+
+.inputBox label {
+    position: relative;
+    top: 0px;
+    left: 17px;
+    color: rgba(33, 33, 140, 1);
+}
+.submit {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(71, 71, 111, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.submit:hover {
+    background: rgba(71, 71, 111, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+#contact2 {
+    display: flex;
+    position: absolute;
+    right: 160px;
+    margin-top: 30px;
+}
+#contact2 #contact2Ul li{
+    list-style-type: none;
+    align-items: center;
+}
+#contact2 #contact2Ul li p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(33, 33, 140, 1);
+    padding-bottom: 18px;
+    margin: 0 25px;
+}
+#contact2 #contact2Ul li i{
+    position: relative;
+        top: 0px;
+        left: 145px;
+    color: rgba(33, 33, 140, 1);
+    font-size: 40px;
+}

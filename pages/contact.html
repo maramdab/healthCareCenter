@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact Us</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../CSS/navAndFooter.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+   
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="navLogo">
+                <h1>AL-Shefa Medical Center</h1>
+            </div>
+            <div class="navMenu">
+                <ul>
+                    <li><a href="../index.html" class="link">Home</a></li>
+                    <li><a href="" class="link">services</a></li>
+                    <li><a href="./pages/patientInfo.html" class="link">Patient Info</a></li>
+                    <li><a href="../pages/contact.html" class="link">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="navBtn">
+                <a href="./pages/login.html"><button class="btn white-button" id="loginBtn">Sign In</button></a>
+                <a href="./pages/register.html"><button class="btn" id="registerBtn">Sign Up</button></a>
+            </div>
+            <div class="navMenuBtn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+
+        </nav>
+
+        
+            <!-- <div id="pageTitle"> -->
+                <!-- <h1>Contact Us</h1>
+            </div> -->
+        
+            <!--Section: Contact v.2-->
+        <section id="contactInfo">
+            
+                <!--Section heading-->
+                <h1 id="pageTitle">Contact us</h1>
+                <!--Section description-->
+                <p id="pageParagraph">Do you have any questions? 
+                    <br>
+                    Please do not hesitate to contact us
+                    directly. Our team will come back to you within
+                    a matter of hours to help you.
+                </p>
+              <!--Grid column-->
+
+                    <form id="contactForm" >
+                        
+                        <div class="inputBox">
+                            <label for="userName">Your Name</label>
+                            <input type="text" class="inputField" id="userName" placeholder="" required>
+                           
+                        </div>
+                        
+                        <div class="inputBox">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="inputField" id="emial"  >
+                          
+                        </div>
+                        <div class="inputBox">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="inputField" id="subject" required>
+                        
+                        </div>
+                        <div class="inputBox">
+                            <label for="message">Message</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="inputField"></textarea>
+                            
+                           
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" class="submit" value="Send">
+                        </div>
+                        
+                        
+                        <!--Grid row-->
+                    </form>
+
+            
+                    <!--Grid column-->
+                <div id="contact2">
+                    <ul id="contact2Ul">
+                        <li><i class='bx bx-current-location' style="color: #21218c;"></i>
+                            <p>Irbid , Jordan</p>
+                        </li>
+        
+                        <li><i class='bx bxs-phone' style='color:#21218c'></i>
+                            <p>+ 962 798675601</p>
+                        </li>
+        
+                        <li><i class='bx bxs-envelope' style="color: #21218c;"></i>
+                            <p>alshifaamrdical@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                    <!--Grid column -->
+          
+            <!--Section: Contact v.2-->
+        </section>
+
+    </div>
+ <script src="../JS/navAndFooter.js"></script>
+
+
+</html>
