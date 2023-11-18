@@ -13,12 +13,12 @@
         position: relative;
         /* margin-top: -200px; */
         color: rgba(33, 33, 140);
-            opacity: 1;
-            font-size: 30px;
-            font-weight: 600;
-            line-height: 1.2;
-            margin: 0;
-            padding: 0px 0px 5px;
+        opacity: 1;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0px 0px 5px;
 }
 #pageParagraph{
     border-bottom: 1px solid rgba(205, 209, 212, 0.4);
@@ -128,3 +128,4 @@
     color: rgba(33, 33, 140, 1);
     font-size: 40px;
 }
+
