@@ -32,39 +32,42 @@
 
     </nav>
     <!-- form box -->
-    <form class="formBox"  >
+    <div class="formBox"  >
         
         <!----------------------Register box--------------------------->
-       <div class="registerContainer" aria-autocomplete=""  >
+       <div class="registerContainer" aria-autocomplete="on"  >
             <div class="top">
-                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <span>Have an account? <a href="./login.html" >Login</a></span>
                 <header>Sign up</header>
             </div>
+            <form id="inputForm" action="">
+                <div class="inputBox">
+                    <label for="userName"></label>
+                    <input type="text" class="inputField" id="userName" placeholder="UserName" required>
+                    <i class="bx bx-user"></i>
+                </div>
+                
+                <div class="inputBox">
+                    <label for="regEmial"></label>
+                    <input type="email" class="inputField" id="regEmial" placeholder="Email" required>
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="inputBox">
+                    <label for="regPass"></label>
+                    <input type="password" class="inputField" id="regPass" placeholder="Password" required>
+                    <i class="bx bx-lock-alt"></i>
+                    <span id="errorPass"></span>
+                </div>
+                <div class="inputBox">
+                    <label for="confirmPass"></label>
+                    <input type="password" class="inputField" id="confirmPass" placeholder="confirmPassword" required>
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" class="submit" value="Register">
+                </div>
+            </form>
             
-            <div class="inputBox">
-                <label for="userName"></label>
-                <input type="text" class="inputField" id="userName" placeholder="UserName" required>
-                <i class="bx bx-user"></i>
-            </div>  
-        
-            <div class="inputBox">
-                <label for="regEmial"></label>
-                <input type="email" class="inputField" id="regEmial"placeholder="Email" required>
-                <i class="bx bx-envelope"></i>
-            </div>
-            <div class="inputBox">
-                <label for="regPass"></label>
-                <input type="password" class="inputField" id="regPass" placeholder="Password" required>
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="inputBox">
-                <label for="confirmPass"></label>
-                <input type="password" class="inputField" id="confirmPass" placeholder="confirmPassword" required>
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="inputBox">
-                <input type="submit" class="submit" value="Register">
-            </div>
             <div class="twoCol">
                 <div class="one">
                     <input type="checkbox"  id="registerCheck">
@@ -75,9 +78,30 @@
                 </div>
             </div>
        </div>
-    </form>
+    </div>
    </div>
    <script src="../JS/navAndFooter.js"></script>
+   <script src="../JS/register.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script>
+        document.getElementById('inputForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Access input values
+            var userName = document.getElementById('userName').value;
+            var regEmail = document.getElementById("regEmial").value;
+            var regPass = document.getElementById("regPass").value;
+            var confirmPass = document.getElementById("confirmPass").value;
+
+            // Use the values as needed (e.g., validate, send to server, etc.)
+            console.log('Username:', userName);
+            console.log('Email:', regEmail);
+            console.log('Password:', regPass);
+            console.log('Confirm Password:', confirmPass);
+
+            // Add your form submission logic here
+            // For example, you might use AJAX to send data to the server
+        });
+    </script> -->
 </body>
 </html>

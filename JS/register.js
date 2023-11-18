@@ -1,48 +1,138 @@
-function myMenuFunction() {
-    var i = document.getElementById("navMenu");
-    if (i.className === "navMenu") {
-        i.className += " responsive";
-    } 
-    else {
-        i.className = "navMenu";
-    }
-}
-// var a = document.getElementById("loginBtn");
-// var b = document.getElementById("registerBtn");
-// var x = document.getElementById("login");
-// var y = document.getElementById("register");
-// function login() {
-//     x.style.left = "4px";
-//     y.style.right = "-520px";
-//     a.className += " white-btn";
-//     b.className = "btn";
-//     x.style.opacity = 1;
-//     y.style.opacity = 0;
-// }
-// function register() {
-//     x.style.left = "-510px";
-//     y.style.right = "5px";
-//     a.className = "btn";
-//     b.className += " white-btn";
-//     x.style.opacity = 0;
-//     y.style.opacity = 1;
+// function myMenuFunction() {
+//     var i = document.getElementById("navMenu");
+//     if (i.className === "navMenu") {
+//         i.className += " responsive";
+//     } 
+//     else {
+//         i.className = "navMenu";
+//     }
 // }
 
-// register Validation
-var formdata1 = document.getElementsByClassName('formBox');
-var y = document.getElementsByClassName('registerContainer');
-var nameForm=document.getElementById('userName').value;
-var emailForm=document.getElementById('regEmail').value;
-var passwordForm=document.getElementById('regpass').value;
-var confirmPasswordForm=document.getElementById('confirmPass').value;
-console.log(nameForm);
 
-var usersData =  JSON.parse(localStorage.getItem('users')) || [];
-// console.log(usersData);
+// var inputForm=document.getElementById("inputForm");
+// var nameForm= document.getElementById('userName').value;
+// var emailForm = document.getElementById("regEmial").value;
+// var passwordForm = document.getElementById("regPass").value;
+// var confirmPasswordForm = document.getElementById("confirmPass").value;
+// console.log(nameForm);
 
-formdata1[0].addEventListener('submit', function (e) {
+
+// var usersData =  JSON.parse(localStorage.getItem('users')) || [];
+// // console.log(usersData);
+
+
+// inputForm.addEventListener('submit', function (event) {
+//     event.preventDefault();
+
+//     if (passwordForm != confirmPasswordForm) {
+//         Swal.fire({
+//             position: 'center',
+//             icon: 'error',
+//             title: 'Password and Confirm Password are not the same',
+//             showConfirmButton: false,
+//             timer: 6000
+//         });
+//     }
+//     else {
+
+      
+//         let user = {
+//             name: nameForm,
+//             email: emailForm,
+//             password: passwordForm
+//         };
+//         if (usersData != null) {
+//             let isExist = false;
+//             for (let i = 0; i < usersData.length; i++) {
+//                 if (usersData[i]['email'] == emailForm) {
+//                     Swal.fire({
+//                         position: 'center',
+//                         icon: 'error',
+//                         title: 'Email already exists',
+//                         showConfirmButton: false,
+//                         timer: 6000
+//                     });
+//                     isExist = false;
+//                     return;
+//                 }
+//                 else if (usersData[i]['name'] == nameForm) {
+//                     Swal.fire({
+//                         position: 'center',
+//                         icon: 'error',
+//                         title: 'Name already exists',
+//                         showConfirmButton: false,
+//                         timer: 6000
+//                     });
+//                     isExist = false;
+//                     return;
+//                 }
+//                 else {
+//                     isExist = true;
+
+//                 }
+
+//             }
+//             if (isExist == true) {
+//                 usersData.push(user);
+//                 localStorage.setItem('users', JSON.stringify(usersData));
+//                 console.log(localStorage.getItem('users'));
+//                 Swal.fire({
+//                     position: 'top-end',
+//                     icon: 'success',
+//                     title: 'Your account was created successfully',
+//                     showConfirmButton: false,
+//                     timer: 1500
+//                 })
+//                     .then(function () {
+//                         window.location = "../index.html";
+//                     });
+// ;
+//             }
+//         }
+//         else {
+
+//             usersData.push(user);
+//             localStorage.setItem('users', JSON.stringify(usersData));
+//             console.log(localStorage.getItem('users'));
+//             Swal.fire({
+//                 position: 'top-end',
+//                 icon: 'success',
+//                 title: 'Your account was created successfully',
+//                 showConfirmButton: false,
+//                 timer: 1500
+//             });
+//         };
+//         //  json object:> string
+
+
+
+
+//     }
+// });
+var inputForm = document.getElementById("inputForm");
+
+var usersData = JSON.parse(localStorage.getItem('users')) || [];
+
+inputForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    if (passwordForm.value != confirmPasswordForm.value) {
+
+    var nameForm = document.getElementById('userName').value;
+    var emailForm = document.getElementById("regEmial").value;
+    var passwordForm = document.getElementById("regPass").value;
+    var confirmPasswordForm = document.getElementById("confirmPass").value;
+    
+      if (!isStrongPassword(passwordForm)) {
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Password should be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character.',
+            showConfirmButton: false,
+            timer: 8000
+        });
+        return; // Exit the function if the password is not strong
+    }
+
+    if (passwordForm != confirmPasswordForm) {
         Swal.fire({
             position: 'center',
             icon: 'error',
@@ -50,19 +140,17 @@ formdata1[0].addEventListener('submit', function (e) {
             showConfirmButton: false,
             timer: 6000
         });
-    }
-    else {
-
-      
+    } else {
         let user = {
-            name: nameForm.value,
-            email: emailForm.value,
-            password: passwordForm.value
+            name: nameForm,
+            email: emailForm,
+            password: passwordForm
         };
+
         if (usersData != null) {
             let isExist = false;
             for (let i = 0; i < usersData.length; i++) {
-                if (usersData[i]['email'] == emailForm.value) {
+                if (usersData[i]['email'] == emailForm) {
                     Swal.fire({
                         position: 'center',
                         icon: 'error',
@@ -70,10 +158,9 @@ formdata1[0].addEventListener('submit', function (e) {
                         showConfirmButton: false,
                         timer: 6000
                     });
-                    isExist = false;
-                    return;
-                }
-                else if (usersData[i]['name'] == nameForm.value) {
+                    isExist = true; // Update to true if the email already exists
+                    break; // Exit the loop once a match is found
+                } else if (usersData[i]['name'] == nameForm) {
                     Swal.fire({
                         position: 'center',
                         icon: 'error',
@@ -81,16 +168,12 @@ formdata1[0].addEventListener('submit', function (e) {
                         showConfirmButton: false,
                         timer: 6000
                     });
-                    isExist = false;
-                    return;
+                    isExist = true; // Update to true if the name already exists
+                    break; // Exit the loop once a match is found
                 }
-                else {
-                    isExist = true;
-
-                }
-
             }
-            if (isExist == true) {
+            
+            if (!isExist) {
                 usersData.push(user);
                 localStorage.setItem('users', JSON.stringify(usersData));
                 console.log(localStorage.getItem('users'));
@@ -100,15 +183,11 @@ formdata1[0].addEventListener('submit', function (e) {
                     title: 'Your account was created successfully',
                     showConfirmButton: false,
                     timer: 1500
-                })
-                    .then(function () {
-                        window.location = "../index.html";
-                    });
-;
+                }).then(function () {
+                    window.location = "../index.html";
+                });
             }
-        }
-        else {
-
+        } else {
             usersData.push(user);
             localStorage.setItem('users', JSON.stringify(usersData));
             console.log(localStorage.getItem('users'));
@@ -119,11 +198,11 @@ formdata1[0].addEventListener('submit', function (e) {
                 showConfirmButton: false,
                 timer: 1500
             });
-        };
-        //  json object:> string
-
-
-
-
+        }
     }
 });
+function isStrongPassword(password) {
+    // Password should be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character.
+    var strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return strongPasswordRegex.test(password);
+}

@@ -29,8 +29,9 @@
                 </ul>
             </div>
             <div class="navBtn">
-                <a href="../pages/login.html"><button class="btn white-button" id="loginBtn">Sign In</button></a>
-                <a href="../pages/register.html"><button class="btn" id="registerBtn">Sign Up</button></a>
+                <a href="./login.html" id="loginLink"><button class="btn white-button" id="loginBtn" onclick="handleLoginClick()">Sign In</button></a>
+                <a href="./register.html" id="registerLink"><button class="btn" id="registerBtn">Sign Up</button></a>
+
             </div>
             <div class="navMenuBtn">
                 <i class="bx bx-menu" onclick="myMenuFunction()"></i>
@@ -182,35 +183,8 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiperServices", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-            },
-        });
-    </script>
+    <script src="../JS/services.js"></script>
+    
 </body>
 
 </html>
