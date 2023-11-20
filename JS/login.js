@@ -7,7 +7,8 @@ loginForm.addEventListener('submit', function (e) {
     var passwordForm = document.getElementById("passwordForm");
     let isLogin=false;
     let usersData =  JSON.parse(localStorage.getItem('users')) || [];
-    for(let  i = 0 ;i< usersData.length;i++){
+    if (usersData!=null){
+        for(let  i = 0 ;i< usersData.length;i++){
         if(emailForm.value == usersData[i]['email'] && passwordForm.value == usersData[i]['password']){
             localStorage.setItem('email',usersData[i]['email']);
             localStorage.setItem('password',usersData[i]['password']);
@@ -24,7 +25,7 @@ loginForm.addEventListener('submit', function (e) {
                 isLogin = false;
             return;
         }
-        else{
+        else {
             isLogin = true;
         }
     }
@@ -37,6 +38,20 @@ loginForm.addEventListener('submit', function (e) {
             timer: 6000
         });
     }
+    } 
+    else{
+         Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'You must sign up first',
+            showConfirmButton: false,
+            timer: 6000
+        }).then(function () {
+                    window.location = "../pages/register.html";
+                });
+        
+    }
+    
 });
 
 function handleLoginClick() {

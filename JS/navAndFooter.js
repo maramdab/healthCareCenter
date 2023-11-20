@@ -25,11 +25,16 @@ function updateNavigationButtons() {
     var isLoggedIn = localStorage.getItem('email') !== null;
     var loginLink = document.getElementById('loginLink');
     var registerLink = document.getElementById('registerLink');
+    var userName1=document.getElementById("userName1");
+    var myUserName=document.getElementById('myUserName')
 
     if (isLoggedIn) {
         // User is logged in, update buttons to show logout
         loginLink.innerHTML = '<button class="btn white-button" id="loginBtn" onclick="handleLoginClick()">Logout</button>';
         registerLink.style.display = 'none'; // Hide the register button when logged in
+        userName1.innerHTML=localStorage.getItem('name');
+        myUserName.style.display='flex';
+
     } else {
         // User is not logged in, show login and register buttons
         loginLink.innerHTML = '<button class="btn white-button" id="loginBtn" onclick="handleLoginClick()">Sign In</button>';
@@ -37,6 +42,7 @@ function updateNavigationButtons() {
         registerLink.style.display = 'inline-block'; // Show the register button when not logged in
     }
 }
+
 
 // Initial call to set the correct buttons when the page loads
 updateNavigationButtons();

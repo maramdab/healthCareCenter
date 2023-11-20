@@ -4,9 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login and Regiteration</title>
+    <title> Book Appointment</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../CSS/register.css">
+    <link rel="stylesheet" href="../CSS/appointment.css">
+    <link rel="stylesheet" href="../CSS/navAndFooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
 </head>
 
 <body>
@@ -24,6 +31,10 @@
 
                 </ul>
             </div>
+            <div id="myUserName">
+                <i class="fa-regular fa-user"><span id="userName1"></span></i>
+            
+            </div>
             <div class="navBtn">
                 <a href="./login.html" id="loginLink"><button class="btn white-button" id="loginBtn"
                         onclick="handleLoginClick()">Sign In</button></a>
@@ -36,35 +47,62 @@
         </nav>
         <!-- form box -->
         <div class="formBox">
-            <!----------------------Login box--------------------------->
-            <div class="appointmentContainer" id="appointment">
+            <!----------------------appointment box--------------------------->
+            <div class="bookContainer" id="book">
                 <div class="top">
-                    <span> <a href="./register.html">Sign Up</a></span>
-                    <header>Login</header>
+                    <header>Book Appointment</header>
                 </div>
-                <form id="loginForm">
+                <form id="bookForm">
                     <div class="inputBox">
-                        <input type="email" class="inputField" id="emailForm" placeholder="UserName or Emial">
-                        <i class="bx bx-user"></i>
+                        <input type="text" class="inputField" id="firstNameForm" placeholder="FirstName">
+                        <input type="text" class="inputField" id="secondName" placeholder="secondName">
                     </div>
                     <div class="inputBox">
-                        <input type="password" class="inputField" id="passwordForm" placeholder="Password">
-                        <i class="bx bx-lock-alt"></i>
+                        <input type="tel" class="inputField" id="phoneNumber" maxlength="10" placeholder="ContactNumber">
+                        
                     </div>
                     <div class="inputBox">
-                        <input type="submit" class="submit" value="Sign in">
+                        <input type="text" class="inputField" id="address"  placeholder="YourAddress">
+                    
+                    </div>
+                <div class="inputBox" id="check">
+                    <span>Select Services:</span>
+                    <label for="primaryCare" class="checkBox"><input type="checkbox" id="primaryCare" name="servicesOption">Primary Care</label>
+                    <label for="dentalCare" class="checkBox"><input type="checkbox" id="dentalCare" name="servicesOption">Dental Care</label>
+                    <label for="motherhood" class="checkBox"><input type="checkbox" id="motherhood" name="servicesOption">Motherhood And Childhood</label>
+                    <label for="labTests" class="checkBox"><input type="checkbox" id="labTests" name="servicesOption">Laboratory Tests</label>
+                </div>
+
+                    <div class="inputBox" >
+                        <span >Preferred Date and Time:</span>
+                        <div>
+                                <input type="date" class="inputField" id="one">
+                                <select name="selectTime" class="inputField" id="time">
+                                    <option value="8:00">8:00 AM</option>
+                                    <option value="9:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">13:00 PM</option>
+                                    <option value="14:00">14:00 PM</option>
+                                    <option value="15:00">15:00 PM</option>
+                                    <option value="16:00">16:00 PM</option>
+                                    <option value="17:00">17:00 PM</option>
+                                    <option value="18:00">18:00 PM</option>
+                                    <option value="19:00">19:00 PM</option>
+                                    <option value="20:00">20:00 PM</option>
+                                </select>
+                        </div>
+    
+                        
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="submit" class="submit" value="Sent">
                     </div>
                 </form>
 
-                <div class="twoCol">
-                    <div class="one">
-                        <input type="checkbox" id="loginCheck">
-                        <label for="loginCheck">Remember me</label>
-                    </div>
-                    <div class="two">
-                        <label><a href="#">Forgot password?</a></label>
-                    </div>
-                </div>
+              
             </div>
 
         </div>
@@ -72,7 +110,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../JS/navAndFooter.js"></script>
-    <script src="../JS/login.js"></script>
+    <script src="../JS/appointment.js"></script>
+
+  
 </body>
 
 </html>
