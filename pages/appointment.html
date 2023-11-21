@@ -27,9 +27,11 @@
             <div class="navMenu" id="navMenu">
                 <ul>
                     <li><a href="../index.html" class="link active">Home</a></li>
-                    <li><a href="../pages/services.html" class="link">services</a></li>
-                    <li><a href="../pages/patientInfo.html" class="link">Patient Info</a></li>
-                    <li><a href="../pages/contact.html" class="link">Contact Us</a></li>
+                    <li><a href="./about.html" class="link">About Us</a></li>
+
+                    <li><a href="./services.html" class="link">services</a></li>
+                    <li><a href="./patientInfo.html" class="link">Patient Info</a></li>
+                    <li><a href="./contact.html" class="link">Contact Us</a></li>
 
                 </ul>
             </div>
@@ -55,7 +57,7 @@
                     <header>Book Appointment</header>
                 </div>
                 <form id="bookForm">
-                    <div class="inputBox">
+                    <div class="inputBox" id="patientName">
                         <input type="text" class="inputField" id="firstNameForm" placeholder="FirstName">
                         <input type="text" class="inputField" id="secondName" placeholder="secondName">
                     </div>
@@ -67,6 +69,11 @@
                         <input type="text" class="inputField" id="address"  placeholder="YourAddress">
                     
                     </div>
+                    <div class="inputBox">
+                        <label for="birthday" >Date of Birth</label>
+                        <input type="date" class="inputField" id="birthday" placeholder="YourAddress">
+                    </div>
+                    
                 <div class="inputBox" id="check">
                     <span>Select Services:</span>
                     <label for="primaryCare" class="checkBox"><input type="checkbox" id="primaryCare" name="servicesOption">Primary Care</label>
@@ -74,8 +81,8 @@
                     <label for="motherhood" class="checkBox"><input type="checkbox" id="motherhood" name="servicesOption">Motherhood And Childhood</label>
                     <label for="labTests" class="checkBox"><input type="checkbox" id="labTests" name="servicesOption">Laboratory Tests</label>
                 </div>
-
-                    <div class="inputBox" >
+                
+                    <div class="inputBox" id="preferredTime" >
                         <span >Preferred Date and Time:</span>
                         <div>
                                 <input type="date" class="inputField" id="one">
@@ -122,6 +129,7 @@
                 <h4>Pages</h4>
                 <ul>
                     <li><a href="../index.html" class="link">Home</a></li>
+                    <li><a href="./about.html" class="link">About Us</a></li>
                     <li><a href="./services.html" class="link">services</a></li>
                     <li><a href="./patientInfo.html" class="link">Patient Info</a></li>
                     <li><a href="./contact.html" class="link">Contact Us</a></li>

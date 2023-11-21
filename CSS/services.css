@@ -30,9 +30,7 @@
 }
 .servicesHeadingText h1{
     border-bottom: 1px solid rgba(205, 209, 212, 0.4);
-        padding: 0px 0;
         text-align: center;
-        background-size: cover;
         position: relative;
         color: rgba(33, 33, 140);
         opacity: 1;

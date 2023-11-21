@@ -1,0 +1,95 @@
+#mainDiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    width: 100%;
+}
+
+#mainDivOne{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+#pageTilte h1{
+    border-bottom: 1px solid rgba(205, 209, 212, 0.4);
+    color: rgba(33, 33, 140);
+    opacity: 1;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0px 0px 40px;
+    text-align: center;
+}
+#paragraphText{
+ width:100%;
+ display: flex;
+ 
+}
+#paragraphText p{
+    width: 70%;
+    color: rgba(33, 33, 140);
+    padding-top: 60px;
+}
+#imgDoc img{
+    width: 600px;
+    height: 350px;
+}
+#secondryDiv{
+    display: flex;
+    padding: 0px 0px;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#top{
+    width: 100%;
+    
+}
+.vision{
+    
+    padding: 20px 20px;
+
+}
+
+.vision h4{
+    color: rgba(33, 33, 140);
+    padding-bottom: 20px;
+}
+.paragraphI {
+    display: flex;
+    
+    
+    
+}
+.paragraphI p{
+    color: #122853;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        display: -webkit-box;
+        -webkit-line-clamp: .3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        width: 60%;
+}
+.paragraphI i{
+    font-size: 2rem;
+        color: rgba(33, 33, 140, 1);
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+#bottom img{
+    width: 600px;
+}
+.paragraphI ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: rgba(33, 33, 140, 1);
+}

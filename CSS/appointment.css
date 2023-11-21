@@ -7,19 +7,14 @@
     font-family: 'poppins', sans-serif;
 }
 
-body {
-    background: url("../media/medical1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-    background: rgba(220, 212, 212, 0.4);
+    
 }
 
 .nav {
@@ -125,6 +120,7 @@ header {
 .inputBox{
     display: flex;
     justify-content:center;
+    flex-direction: column;
 }
 .inputField{
     font-size: 15px;
@@ -138,7 +134,7 @@ header {
     outline: none;
     transition: .2s ease;
     margin-bottom: 20px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .inputField:hover,
@@ -149,11 +145,22 @@ header {
 ::-webkit-input-placeholder {
     color: rgba(33, 33, 140, 1);
 }
-
+#patientName{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#preferredTime{
+    display: flex;
+    flex-direction: row;
+}
 .inputBox span {
     color: rgba(33, 33, 140, 1);
     font-size: 16px;
     padding: 10px 0 10px 0;
+}
+.inputBox label{
+    color: rgba(33, 33, 140, 1);
 }
 #check{
     color: rgba(33, 33, 140, 1);

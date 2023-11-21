@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Patient Info</title>
-        <link rel="shortcut icon" href="../media/medical-symbol-transparent-8.jpg">
+    <link rel="shortcut icon" href="../media/medical-symbol-transparent-8.jpg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../CSS/navAndFooter.css">
     <link rel="stylesheet" href="../CSS/patientInfo.css">
+    <link rel="stylesheet" href="../CSS/navAndFooter.css">
 </head>
 
 <body>
@@ -21,68 +21,82 @@
             <div class="navMenu" id="navMenu">
                 <ul>
                     <li><a href="../index.html" class="link active">Home</a></li>
-                    <li><a href="../pages/services.html" class="link">services</a></li>
-                    <li><a href="#" class="link">Patient Info</a></li>
-                    <li><a href="../pages/contact.html" class="link">Contact Us</a></li>
+                    <li><a href="./about.html" class="link">About Us</a></li>
+                    <li><a href="./services.html" class="link">services</a></li>
+                    <li><a href="./patientInfo.html" class="link">Patient Info</a></li>
+                    <li><a href="./contact.html" class="link">Contact Us</a></li>
 
                 </ul>
             </div>
             <div class="navBtn">
-                <a href="./login.html"><button class="btn white-button" id="loginBtn">Sign In</button></a>
-                <a href="./register.html"><button class="btn" id="registerBtn">Sign Up</button></a>
+                <a href="./login.html" id="loginLink"><button class="btn white-button" id="loginBtn"
+                        onclick="handleLoginClick()">Sign In</button></a>
+                <a href="./register.html" id="registerLink"><button class="btn" id="registerBtn">Sign Up</button></a>
             </div>
             <div class="navMenuBtn">
                 <i class="bx bx-menu" onclick="myMenuFunction()"></i>
             </div>
 
         </nav>
-        <footer id="footer">
-            <div id="topFooter">
-                <div id="locationFooter">
-                    <h4>Location</h4>
-                    <p>Jabal Amman, 5th Circle Khalil Mizel
-                        <br>
-                        Street Amman – Jordan
-                    </p>
-                </div>
-                <div id="pages">
-                    <h4>Pages</h4>
-                    <ul>
-                        <li><a href="../index.html" class="link">Home</a></li>
-                        <li><a href="./services.html" class="link">services</a></li>
-                        <li><a href="./patientInfo.html" class="link">Patient Info</a></li>
-                        <li><a href="./contact.html" class="link">Contact Us</a></li>
-                    </ul>
-        
-                </div>
-                <div id="emergencyAndOpenHour">
-                    <div id="emergency">
-                        <h4>Emergency</h4>
-                        <p>+ 962 798675601</p>
-                    </div>
-                    <div id="openHours">
-                        <h4>Visiting Hours</h4>
-                        <p>General Visiting Hours: <br>
-                            8:00 a.m. – 04:00 p.m.
-                    </div>
-                </div>
-                <div id="socialMedia">
-                    <h4>Social Media</h4>
-                    <i class='bx bxl-facebook-circle' style='color:#3435a2'></i>
-                    <i class='bx bxl-twitter' style='color:#3536a5'></i>
-                    <i class='bx bxl-instagram' style='color:#3435a2'></i>
-                    <i class='bx bxl-linkedin-square' style='color:#3435a2'></i>
-                </div>
+        <section id="patientInfo">
+            <div class="PatientHeading">
+                <h1>Patient Informaton</h1>
             </div>
-            <div id="bottomFooter">
-                <span>© Copyright 2018. All Rights Reserved. Al Shifa'a Medical Center
-                    By Management Information Systems Department</span>
-            </div>
-        
-        </footer>
-    <script src="../JS/navAndFooter.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <div>
 
+            </div>
+
+        </section>
+
+    </div>
+    <footer id="footer">
+        <div id="topFooter">
+            <div id="locationFooter">
+                <h4>Location</h4>
+                <p>Jabal Amman, 5th Circle Khalil Mizel
+                    <br>
+                    Street Amman – Jordan
+                </p>
+            </div>
+            <div id="pages">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="../index.html" class="link">Home</a></li>
+                    <li><a href="./about.html" class="link">About Us</a></li>
+                    <li><a href="./services.html" class="link">services</a></li>
+                    <li><a href="./patientInfo.html" class="link">Patient Info</a></li>
+                    <li><a href="./contact.html" class="link">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <div id="emergencyAndOpenHour">
+                <div id="emergency">
+                    <h4>Emergency</h4>
+                    <p>+ 962 798675601</p>
+                </div>
+                <div id="openHours">
+                    <h4>Visiting Hours</h4>
+                    <p>General Visiting Hours: <br>
+                        8:00 a.m. – 04:00 p.m.
+                </div>
+            </div>
+            <div id="socialMedia">
+                <h4>Social Media</h4>
+                <i class='bx bxl-facebook-circle' style='color:#3435a2'></i>
+                <i class='bx bxl-twitter' style='color:#3536a5'></i>
+                <i class='bx bxl-instagram' style='color:#3435a2'></i>
+                <i class='bx bxl-linkedin-square' style='color:#3435a2'></i>
+            </div>
+        </div>
+        <div id="bottomFooter">
+            <span>© Copyright 2018. All Rights Reserved. Al Shifa'a Medical Center
+                By Management Information Systems Department</span>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/navAndFooter.js"></script>
+    <script src="../JS/login.js"></script>
 </body>
 
 </html>
