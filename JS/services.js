@@ -72,7 +72,7 @@ updateNavigationButtons();
                 },
                 1024: {
                     slidesPerView: 3,
-                    spaceBetween: 20,
+                    spaceBetween: 10,
                 },
             },
         });

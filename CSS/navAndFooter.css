@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url("../media/medical1.jpg");
+    background: url("../media/background.jpg") no-repeat center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-    background: rgba(220, 212, 212, 0.4);
+    /* background: rgba(220, 212, 212, 0.4); */
 }
 
 .nav {
@@ -30,14 +30,20 @@ body {
     width: 100%;
     height: 100px;
     line-height: 100px;
-    background: linear-gradient(rgba(129, 127, 127, 0.6), transparent);
+    background: linear-gradient(rgba(111, 171, 227, 0.6), transparent);
     z-index: 100;
 }
-
+.navLogo{
+    display: flex;
+}
 .navLogo h1 {
     color: rgba(33, 33, 140);
     font-size: 25px;
     font-weight: 600;
+    width: 100%;
+}
+.navLogo img{
+    width: 100px;
 }
 
 .navMenu ul {
@@ -65,16 +71,17 @@ body {
     width: 130px;
     height: 40px;
     font-weight: 500;
-    background: rgba(71, 71, 111, 0.5);
+    background: rgba(33, 33, 140, 0.5);
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: 0.3s ease;
+    color: #fff;
 
 }
 
 .btn:hover {
-    background: rgba(71, 71, 111, 0.3);
+    background: rgba(33, 33, 140, 0.3);
 }
 
 #registerBtn {
@@ -82,11 +89,11 @@ body {
 }
 
 .btn.white-button {
-    background: rgba(71, 71, 111, 0.7);
+    background: rgba(33, 33, 140, 0.7);
 }
 
 .btn.white-button:hover {
-    background: rgba(71, 71, 111, 0.5);
+    background: rgba(33, 33, 140, 0.5);
 }
 
 .navMenuBtn {
@@ -104,7 +111,7 @@ body {
     width: 130px;
     height: 40px;
     font-weight: 500;
-    background: rgba(71, 71, 111, 0.5);
+    background: rgba(33, 33, 140, 0.5);
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -112,6 +119,64 @@ body {
     align-items: center;
     padding-left: 20px;
 }
+#footer{
+    background-color:rgba(33, 33, 140, 0.5) ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+    
+}
+#topFooter{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding-top: 30px;
+    border-bottom: 1px white solid;
+}
+#topFooter h4{
+    color: white;
+    padding: 10px 0;
+    font-weight: 500;
+    width: fit-content;
+}
+#topFooter p{
+    color: white;
+    font-weight: 300;
+    width: fit-content;
+}
+#topFooter  ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#topFooter ul li {
+    list-style-type:none;
+    padding-bottom: 10px;
+}
+
+#pages ul li .link {
+    text-decoration: none;
+    font-weight: 200;
+    color: white;
+    font-size:14px ;
+    border-bottom: 1px solid white;
+    
+
+    
+}
+
+#pages ul li .link:hover,
+:active {
+    border-bottom: 1px solid rgba(33, 33, 140);
+}
+#bottomFooter{
+color: #fff;
+padding: 10px;
+text-align: center;
+font-size: 10px;
+}
+
 @media only screen and (max-width: 1190px) {
     .navLogo h1 {
         font-size: 100%;
@@ -178,8 +243,8 @@ body {
 
 }
 
-@media only screen and (max-width: 380px) {
+/* @media only screen and (max-width: 380px) {
     .navLogo h1 {
         font-size: 100%;
     }
-}
+} */

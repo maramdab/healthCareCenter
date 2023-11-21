@@ -9,7 +9,7 @@
 #pageTilte h1{
     font-size: 55px;
     font-weight: 600;
-    color:rgba(33, 33, 140); ;
+    color:rgba(33, 33, 140); 
     }
     #paragraphText{
         margin-top: 20px;
@@ -18,7 +18,7 @@
     #paragraphText p{
         font-size: 15px;
         font-weight: 400;
-        color: rgba(33, 33, 140);;
+        color: rgba(33, 33, 140);
     }
 
     #bookBtn {
@@ -27,7 +27,7 @@
         height: 50px;
         font-weight: 500;
         align-items: center;
-        background: rgba(71, 71, 111, 0.7);;
+        background: rgba(33, 33, 140, 0.7);
         border: none;
         border-radius: 30px;
         cursor: pointer;
@@ -36,12 +36,12 @@
     #bookBtn a{
         text-decoration: none;
         font-weight: 500;
-        color: rgba(0, 0, 0, 1);
+        color: white;
         padding: 15px;
         margin: 25px 25px;
     }
     #bookBtn:hover {
-        background: rgba(71, 71, 111, 0.3);
+        background: rgba(33, 33, 140, 0.3);
     }
     #imgDoc{
         display: flex;
@@ -49,6 +49,8 @@
        
     }
     #imgDoc img{
-        width: 250px;
+        width: 500px;
     }
-
+    #aboutUs{
+        background: white;
+    }

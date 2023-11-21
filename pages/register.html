@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Login and Regiteration</title>
+        <link rel="shortcut icon" href="../media/medical-symbol-transparent-8.jpg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../CSS/register.css">
+    <link rel="stylesheet" href="../CSS/navAndFooter.css">
 </head>
 <body>
    <div class="wrapper">
     <nav class="nav">
         <div class="navLogo">
+            <img src="../media/—Pngtree—medical logo_5157139.png" alt="">
             <h1>AL-Shefa Medical Center</h1>
         </div>
         <div class="navMenu" id="navMenu">
@@ -32,76 +35,103 @@
 
     </nav>
     <!-- form box -->
-    <div class="formBox"  >
+     <div id="background">
+        <div class="formBox">
         
-        <!----------------------Register box--------------------------->
-       <div class="registerContainer" aria-autocomplete="on"  >
-            <div class="top">
-                <span>Have an account? <a href="./login.html" >Login</a></span>
-                <header>Sign up</header>
+            <!----------------------Register box--------------------------->
+            <div class="registerContainer" aria-autocomplete="on">
+                <div class="top">
+                    <span>Have an account? <a href="./login.html">Login</a></span>
+                    <header>Sign up</header>
+                </div>
+                <form id="inputForm" action="">
+                    <div class="inputBox">
+                        <label for="userName"></label>
+                        <input type="text" class="inputField" id="userName" placeholder="UserName" required>
+                        <i class="bx bx-user"></i>
+                    </div>
+        
+                    <div class="inputBox">
+                        <label for="regEmial"></label>
+                        <input type="email" class="inputField" id="regEmial" placeholder="Email" required>
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                    <div class="inputBox">
+                        <label for="regPass"></label>
+                        <input type="password" class="inputField" id="regPass" placeholder="Password" required>
+                        <i class="bx bx-lock-alt"></i>
+                        <span id="errorPass"></span>
+                    </div>
+                    <div class="inputBox">
+                        <label for="confirmPass"></label>
+                        <input type="password" class="inputField" id="confirmPass" placeholder="confirmPassword" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" class="submit" value="Register">
+                    </div>
+                </form>
+        
+                <div class="twoCol">
+                    <div class="one">
+                        <input type="checkbox" id="registerCheck">
+                        <label for="registerCheck">Remember me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Terms & conditions</a></label>
+                    </div>
+                </div>
             </div>
-            <form id="inputForm" action="">
-                <div class="inputBox">
-                    <label for="userName"></label>
-                    <input type="text" class="inputField" id="userName" placeholder="UserName" required>
-                    <i class="bx bx-user"></i>
-                </div>
-                
-                <div class="inputBox">
-                    <label for="regEmial"></label>
-                    <input type="email" class="inputField" id="regEmial" placeholder="Email" required>
-                    <i class="bx bx-envelope"></i>
-                </div>
-                <div class="inputBox">
-                    <label for="regPass"></label>
-                    <input type="password" class="inputField" id="regPass" placeholder="Password" required>
-                    <i class="bx bx-lock-alt"></i>
-                    <span id="errorPass"></span>
-                </div>
-                <div class="inputBox">
-                    <label for="confirmPass"></label>
-                    <input type="password" class="inputField" id="confirmPass" placeholder="confirmPassword" required>
-                    <i class="bx bx-lock-alt"></i>
-                </div>
-                <div class="inputBox">
-                    <input type="submit" class="submit" value="Register">
-                </div>
-            </form>
-            
-            <div class="twoCol">
-                <div class="one">
-                    <input type="checkbox"  id="registerCheck">
-                    <label for="registerCheck">Remember me</label>
-                </div>
-                <div class="two">
-                    <label><a href="#">Terms & conditions</a></label>
-                </div>
-            </div>
-       </div>
-    </div>
+        </div>
+     </div>
    </div>
+<footer id="footer">
+    <div id="topFooter">
+        <div id="locationFooter">
+            <h4>Location</h4>
+            <p>Jabal Amman, 5th Circle Khalil Mizel
+                <br>
+                Street Amman – Jordan
+            </p>
+        </div>
+        <div id="pages">
+            <h4>Pages</h4>
+            <ul>
+                <li><a href="../index.html" class="link">Home</a></li>
+                <li><a href="./services.html" class="link">services</a></li>
+                <li><a href="./patientInfo.html" class="link">Patient Info</a></li>
+                <li><a href="./contact.html" class="link">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div id="emergencyAndOpenHour">
+            <div id="emergency">
+                <h4>Emergency</h4>
+                <p>+ 962 798675601</p>
+            </div>
+            <div id="openHours">
+                <h4>Visiting Hours</h4>
+                <p>General Visiting Hours: <br>
+                    8:00 a.m. – 04:00 p.m.
+            </div>
+        </div>
+        <div id="socialMedia">
+            <h4>Social Media</h4>
+            <i class='bx bxl-facebook-circle' style='color:#3435a2'></i>
+            <i class='bx bxl-twitter' style='color:#3536a5'></i>
+            <i class='bx bxl-instagram' style='color:#3435a2'></i>
+            <i class='bx bxl-linkedin-square' style='color:#3435a2'></i>
+        </div>
+    </div>
+    <div id="bottomFooter">
+        <span>© Copyright 2018. All Rights Reserved. Al Shifa'a Medical Center
+            By Management Information Systems Department</span>
+    </div>
+
+</footer>
    <script src="../JS/navAndFooter.js"></script>
    <script src="../JS/register.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- <script>
-        document.getElementById('inputForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Access input values
-            var userName = document.getElementById('userName').value;
-            var regEmail = document.getElementById("regEmial").value;
-            var regPass = document.getElementById("regPass").value;
-            var confirmPass = document.getElementById("confirmPass").value;
-
-            // Use the values as needed (e.g., validate, send to server, etc.)
-            console.log('Username:', userName);
-            console.log('Email:', regEmail);
-            console.log('Password:', regPass);
-            console.log('Confirm Password:', confirmPass);
-
-            // Add your form submission logic here
-            // For example, you might use AJAX to send data to the server
-        });
-    </script> -->
+   
 </body>
 </html>

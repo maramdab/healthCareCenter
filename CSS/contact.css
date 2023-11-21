@@ -1,19 +1,19 @@
+
 #contactInfo{
     align-items: center;
-    margin-top: -250px;
-    width: 600px;
-
+    width: 100%;
+    height: 80vh;
+    background: url(../media/pic\ 1.png) no-repeat;
+    background-size: 700px 400px;
+    background-position: 20%;
+    
   
 }
 #pageTitle{
-        border-bottom: 1px solid rgba(205, 209, 212, 0.4);
+     
         padding: 0px 0;
         text-align: center;
-        background-size: cover;
-        position: relative;
-        /* margin-top: -200px; */
         color: rgba(33, 33, 140);
-        opacity: 1;
         font-size: 30px;
         font-weight: 600;
         line-height: 1.2;
@@ -21,11 +21,8 @@
         padding: 0px 0px 5px;
 }
 #pageParagraph{
-    border-bottom: 1px solid rgba(205, 209, 212, 0.4);
         padding: 50px 0;
         text-align: center;
-        position: relative;
-        margin-top: -200px;
         color: rgba(33, 33, 140);
         font-weight: 300;
         line-height: 1.2;
@@ -33,23 +30,23 @@
         padding: 0px 0px 5px;
         font-size: 16px;
 }
-/* #contactForm {
-    position: relative;
+#formPlusContact{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 512px;
-    height: 500px;
-    overflow: hidden;
-    z-index: 2;
-} */
+    margin-left: 20%;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10%;
+   
+    
+}
 #contactForm{
-    position: absolute; 
-    width: 500px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     transition: .5s ease-in-out;
-    left: 100px;
+   
 
 }
 .inputField {
@@ -70,7 +67,7 @@
 }
 .inputField:hover,
 .inputField:focus {
-    background: rgba(71, 71, 111, 0.25);
+    background: rgba(33, 33, 140, 0.25);
 }
 
 ::-webkit-input-placeholder {
@@ -86,45 +83,43 @@
 .submit {
     font-size: 15px;
     font-weight: 500;
-    color: black;
+    color:white;
     height: 45px;
     width: 100%;
     border: none;
     border-radius: 30px;
     outline: none;
-    background: rgba(71, 71, 111, 0.7);
+    background: rgba(33, 33, 140, 0.9);
     cursor: pointer;
     transition: .3s ease-in-out;
 }
 
 .submit:hover {
-    background: rgba(71, 71, 111, 0.5);
+    background: rgba(33, 33, 140, 0.5);
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 
 }
-
-#contact2 {
-    display: flex;
-    position: absolute;
-    right: 160px;
-    margin-top: 30px;
+#contact2{
+    width: 100%;
+    align-items: center;
+   
 }
 #contact2 #contact2Ul li{
     list-style-type: none;
-    align-items: center;
+    display:flex;
+   
+    
 }
 #contact2 #contact2Ul li p{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
     color: rgba(33, 33, 140, 1);
     padding-bottom: 18px;
     margin: 0 25px;
 }
 #contact2 #contact2Ul li i{
-    position: relative;
-        top: 0px;
-        left: 145px;
+   
     color: rgba(33, 33, 140, 1);
     font-size: 40px;
 }
