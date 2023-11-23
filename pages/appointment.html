@@ -17,11 +17,11 @@
 
 </head>
 
-<body>
+<body id="background">
     <div class="wrapper">
         <nav class="nav">
             <div class="navLogo">
-                <img src="../media/—Pngtree—medical logo_5157139.png" alt="">
+                <img src="../media//Medical-Logo-Design-Symbol-Icon-on-transparent-background-PNG.png" alt="">
                 <h1>AL-Shefa Medical Center</h1>
             </div>
             <div class="navMenu" id="navMenu">
@@ -49,6 +49,7 @@
             </div>
 
         </nav>
+     
         <!-- form box -->
         <div class="formBox">
             <!----------------------appointment box--------------------------->
@@ -58,35 +59,35 @@
                 </div>
                 <form id="bookForm">
                     <div class="inputBox" id="patientName">
-                        <input type="text" class="inputField" id="firstNameForm" placeholder="FirstName">
-                        <input type="text" class="inputField" id="secondName" placeholder="secondName">
+                        <input type="text" class="inputField" id="firstNameForm" placeholder="FirstName" required>
+                        <input type="text" class="inputField" id="secondName" placeholder="secondName" required>
                     </div>
                     <div class="inputBox">
-                        <input type="tel" class="inputField" id="phoneNumber" maxlength="10" placeholder="ContactNumber">
+                        <input type="tel" class="inputField" id="phoneNumber" maxlength="10" placeholder="ContactNumber" required>
                         
                     </div>
                     <div class="inputBox">
-                        <input type="text" class="inputField" id="address"  placeholder="YourAddress">
+                        <input type="text" class="inputField" id="address"  placeholder="YourAddress" required>
                     
                     </div>
                     <div class="inputBox">
                         <label for="birthday" >Date of Birth</label>
-                        <input type="date" class="inputField" id="birthday" placeholder="YourAddress">
+                        <input type="date" class="inputField" id="birthday" placeholder="YourAddress" required>
                     </div>
                     
                 <div class="inputBox" id="check">
                     <span>Select Services:</span>
-                    <label for="primaryCare" class="checkBox"><input type="checkbox" id="primaryCare" name="servicesOption">Primary Care</label>
-                    <label for="dentalCare" class="checkBox"><input type="checkbox" id="dentalCare" name="servicesOption">Dental Care</label>
-                    <label for="motherhood" class="checkBox"><input type="checkbox" id="motherhood" name="servicesOption">Motherhood And Childhood</label>
-                    <label for="labTests" class="checkBox"><input type="checkbox" id="labTests" name="servicesOption">Laboratory Tests</label>
+                    <label for="primaryCare" class="checkBox"><input type="checkbox" id="primaryCare" name="servicesOption" required>Primary Care</label>
+                    <label for="dentalCare" class="checkBox"><input type="checkbox" id="dentalCare" name="servicesOption" required>Dental Care</label>
+                    <label for="motherhood" class="checkBox"><input type="checkbox" id="motherhood" name="servicesOption" required>Motherhood And Childhood</label>
+                    <label for="labTests" class="checkBox"><input type="checkbox" id="labTests" name="servicesOption" required>Laboratory Tests</label>
                 </div>
                 
                     <div class="inputBox" id="preferredTime" >
                         <span >Preferred Date and Time:</span>
                         <div>
-                                <input type="date" class="inputField" id="one">
-                                <select name="selectTime" class="inputField" id="time">
+                                <input type="date" class="inputField" id="appointmentDate">
+                                <select name="selectTime" class="inputField" id="time" required>
                                     <option value="8:00">8:00 AM</option>
                                     <option value="9:00">9:00 AM</option>
                                     <option value="10:00">10:00 AM</option>
@@ -99,7 +100,6 @@
                                     <option value="17:00">17:00 PM</option>
                                     <option value="18:00">18:00 PM</option>
                                     <option value="19:00">19:00 PM</option>
-                                    <option value="20:00">20:00 PM</option>
                                 </select>
                         </div>
     

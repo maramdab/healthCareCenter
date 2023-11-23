@@ -1,23 +1,29 @@
 
-
+#mainDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 100;
+    padding: 0 40px;
+}
 #mainDivOne{
     display: flex;
     flex-direction: column;
+   justify-content: space-around;
+   width: 100%;
+   
 }
-#mainDiv{
-    display: flex;
-    flex-direction: row;
-   margin-top: 120px;
-}
+
 #pageTilte h1{
     font-size: 55px;
     font-weight: 600;
     color:rgba(33, 33, 140); 
+    width: 100%;
+   
     }
-    #paragraphText{
-        margin-top: 20px;
-        margin-bottom: 40px;
-    }
+
     #paragraphText p{
         font-size: 15px;
         font-weight: 400;
@@ -26,6 +32,7 @@
 
     #bookBtn {
         display: flex;
+        justify-content: center;
         width: 230px;
         height: 50px;
         font-weight: 500;
@@ -40,8 +47,7 @@
         text-decoration: none;
         font-weight: 500;
         color: white;
-        padding: 15px;
-        margin: 25px 25px;
+    
     }
     #bookBtn:hover {
         background: rgba(33, 33, 140, 0.3);
@@ -49,6 +55,7 @@
 
     #imgDoc img{
         width: 500px;
+       
     }
     #aboutUs{
         width: 100%;
@@ -91,3 +98,245 @@
          width: 500px;
          padding: 50px 0;
     }
+
+         @media only screen and (max-width: 1103px) {
+    
+        #pageTilte h1 {
+                font-size: 45px;
+            }
+        #imgDoc img {
+            width: 450px;
+          
+        }
+        #paragraphText p {
+            font-size: 13px;
+           
+        }
+        #aboutUsImg img {
+            width: 350px;
+            padding: 50px 0;
+        }
+        #aboutUsParagraph p {
+          font-size: 13px;
+        }
+         }
+        @media only screen and (max-width: 957px) {
+
+            #pageTilte h1 {
+                font-size: 35px;
+            }
+
+            #imgDoc img {
+                width: 380px;
+
+            }
+
+            #paragraphText p {
+                font-size: 11px;
+
+            }
+            #aboutUsImg img {
+                width: 290px;
+                padding: 50px 0;
+            }
+
+            #aboutUsParagraph p {
+                font-size: 11px;
+            }
+            
+        }
+        @media only screen and (max-width: 822px) {
+
+            #pageTilte h1 {
+                font-size: 30px;
+            }
+
+            #imgDoc img {
+                width: 340px;
+
+            }
+
+            #paragraphText p {
+                font-size: 10px;
+
+            }
+
+            #aboutUsImg img {
+                width: 250px;
+                padding: 50px 0;
+            }
+            #aboutUsHeadingText h2 {
+                font-size: 25px;
+              
+            }
+            #aboutUsHeadingText p{
+                font-size: 15px;
+            }
+
+            #aboutUsParagraph p {
+                font-size: 10px;
+            }
+            #bookBtn {
+                width: 200px;
+                height: 50px;
+            }
+
+            #bookBtn a {
+               font-size: 17px;
+            }
+            #aboutUsParagraph a {
+                height: 30px;
+                width: 70px;
+                font-size: 10px;
+                padding: 5px;
+             
+            }
+            
+}
+        @media only screen and (max-width: 755px) {
+
+            #pageTilte h1 {
+                font-size: 25px;
+            }
+
+            #imgDoc img {
+                width: 300px;
+
+            }
+
+            #paragraphText p {
+                font-size: 9px;
+
+            }
+            #bookBtn {
+                width: 150px;
+                height: 45px;
+            }
+
+            #bookBtn a {
+                font-size: 13px;
+            }
+            
+            #aboutUsHeadingText h2 {
+                font-size: 20px;
+
+            }
+
+            #aboutUsHeadingText p {
+                font-size: 12px;
+            }
+
+            #aboutUsImg img {
+                width: 245px;
+                padding: 50px 0;
+            }
+
+            #aboutUsParagraph p {
+                font-size: 10px;
+            }
+           
+        }
+        @media only screen and (max-width: 680px) {
+
+            #pageTilte h1 {
+                font-size: 25px;
+            }
+
+            #imgDoc img {
+                width: 280px;
+
+            }
+
+            #paragraphText p {
+                font-size: 9px;
+
+            }
+
+            #bookBtn {
+                width: 125px;
+                height: 40px;
+            }
+
+            #bookBtn a {
+                font-size: 12px;
+            }
+
+            #aboutUsHeadingText h2 {
+                font-size: 18px;
+
+            }
+
+            #aboutUsHeadingText p {
+                font-size: 12px;
+            }
+
+            #aboutUsImg img {
+                width: 250px;
+                padding: 70px 0;
+            }
+
+            #aboutUsParagraph p {
+                font-size: 11px;
+            }
+           
+        }
+
+        @media only screen and (max-width: 600px) {
+            #mainDiv{
+                flex-wrap: wrap;
+                align-items: center;
+                background: url(../media/doctortreatpatient.jpg);
+                background-size: 300px;
+                background-repeat: no-repeat;
+                background-position: 300px;
+                    }
+                
+            }
+            #mainDivOne {
+
+                gap: 30px;
+            }
+            #pageTilte h1 {
+                font-size: 25px;
+            }
+
+            #imgDoc{
+                display: none;
+
+            }
+
+            #paragraphText p {
+                font-size: 9px;
+
+            }
+
+            #bookBtn {
+                width: 125px;
+                height: 40px;
+            }
+
+            #bookBtn a {
+                font-size: 12px;
+            }
+
+            #aboutUsHeadingText h2 {
+                font-size: 18px;
+
+            }
+
+            #aboutUsHeadingText p {
+                font-size: 12px;
+            }
+
+            #aboutUsImg img {
+                width: 250px;
+                padding: 70px 0;
+            }
+
+            #aboutUsParagraph p {
+                font-size: 11px;
+            }
+
+        }
+
+    

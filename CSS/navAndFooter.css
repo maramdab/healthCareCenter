@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 110vh;
+    width: 100%;
     /* background: rgba(220, 212, 212, 0.4); */
 }
 
@@ -32,9 +33,11 @@ body {
     line-height: 100px;
     background: linear-gradient(rgba(111, 171, 227, 0.6), transparent);
     z-index: 100;
+    margin-bottom: 20px;
 }
 .navLogo{
     display: flex;
+   
 }
 .navLogo h1 {
     color: rgba(33, 33, 140);
