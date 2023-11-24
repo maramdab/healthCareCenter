@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
+    /* min-height: 110vh; */
     width: 100%;
     /* background: rgba(220, 212, 212, 0.4); */
 }
@@ -189,6 +189,19 @@ font-size: 10px;
         width: 80px;
     }
 }
+@media only screen and (max-width: 950px) {
+    .navLogo h1 {
+        font-size: 18px;
+    }
+
+    .navBtn .btn {
+        width: 80px;
+    }
+        .navMenu ul li .link {
+           font-size: 14px;
+            margin: 0 6px;
+        }
+}
 
 @media only screen and (max-width: 878px) {
     .navLogo h1 {
@@ -205,7 +218,7 @@ font-size: 10px;
 
     .navMenu {
         position: absolute;
-        top: -800px;
+        top: -878px;
         display: flex;
         justify-content: center;
         background: rgba(255, 255, 255, 0.2);
