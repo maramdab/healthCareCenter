@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+body{
+    background: url(../media/login2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 #background {
     width: 100%;
-    background: url(../media/signupCover.jpg);
     display: flex;
     justify-content: center;
     align-items: center;

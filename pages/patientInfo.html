@@ -45,37 +45,31 @@
             <div id="patientHeading">
                 <h1>Patient Informaton</h1>
             </div>
-            <div id="top">
-                <div id="personal">
-                    <i class="fa-regular fa-circle-user"></i>
-                    <strong>Personal Information</strong>
-                    <p>Patient Name: <span></span></p>
-                    <p>Date Of Birth: <span></span></p>
-                    <p>Contact Number: <span></span></p>
-                    <p>Address: <span></span></p>
-                    <p>Gender: <span></span></p>
-                    <form id="genderForm">
-                        <label for="gender">Patient Gender: </label>
-                        <select name="" id="gender">
-                            <option value="male">Male</option>
-                            <option value="">Female</option>
-                        </select>
-                        <input type="submit" name="" id="genderBtn" value="Save">
-                    </form>
+            <div id="infoContainer">
+                <div id="top">
+                    <div id="personal">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <strong>Personal Information</strong>
+                        <p>Patient Name: <span></span></p>
+                        <p>Date Of Birth: <span></span></p>
+                        <p>Contact Number: <span></span></p>
+                        <p>Address: <span></span></p>
+                        <p>Gender: <span></span></p>
+                        <form id="genderForm">
+                            <label for="gender">Patient Gender: </label>
+                            <select name="" id="gender">
+                                <option value="male">Male</option>
+                                <option value="">Female</option>
+                            </select>
+                            <input type="submit" name="" id="genderBtn" value="Save">
+                        </form>
+                
+                
+                    </div>
                 
                 
                 </div>
                 <div id="left">
-              
-                        <div id="appointmentDetail">
-                            <i class="fa-regular fa-calendar-check"></i>
-                            <strong>Appointment Detials</strong>
-                            <p>Date: <span></span></p>
-                            <p>Time: <span></span></p>
-                            <p>Selected Services: <span></span></p>
-                        </div>
-
-                    
                     <div id="vitalSign">
                         <i class="fa-solid fa-bed-pulse"></i>
                         <strong>Vital Signs</strong>
@@ -95,18 +89,21 @@
                                 <p>Temperture</p>
                                 <span></span>
                             </div>
-                    
+                
                         </div>
-                    
+                
+                    </div>
+                    <div id="appointmentDetail">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <strong>Appointment Detials</strong>
+                        <p>Date: <span></span></p>
+                        <p>Time: <span></span></p>
+                        <p>Selected Services: <span></span></p>
                     </div>
                 </div>
-                    
-                
             </div>
-           
             
            
-
         </section>
 
     </div>
@@ -157,7 +154,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../JS/navAndFooter.js"></script>
-    <script src="../JS/login.js"></script>
+    
 </body>
 
 </html>
