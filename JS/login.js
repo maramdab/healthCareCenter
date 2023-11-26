@@ -14,7 +14,7 @@ loginForm.addEventListener('submit', function (e) {
             localStorage.setItem('password',usersData[i]['password']);
             localStorage.setItem('name',usersData[i]['name']);
          Swal.fire({
-                    position: 'top-end',
+                    position: 'center',
                     icon: 'success',
                     title: 'You have logged in successfully.',
                     showConfirmButton: false,

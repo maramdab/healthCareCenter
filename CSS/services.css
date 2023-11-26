@@ -14,7 +14,7 @@ body {
 }
 #ourServices{
     width: 100%;
-    padding: 120px 0px;
+    padding: 90px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;

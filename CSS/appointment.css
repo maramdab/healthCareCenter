@@ -6,7 +6,7 @@
     
 }
 
-.formBox {
+/* .formBox {
     position: relative;
     display: flex;
     align-items: center;
@@ -17,12 +17,13 @@
     z-index: 2;
     margin-top: 40px;
 
-}
+} */
 
 .bookContainer {
-    position: absolute;
-    left: 4px;
-    width: 500px;
+    max-width: 100%;
+    max-height: 1000px;
+    padding: 120px 40px;
+    align-items: center;
     display: flex;
     flex-direction: column;
     transition: .5s ease-in-out;
@@ -109,7 +110,7 @@ header {
 
 
 
-
+/* 
 @media only screen and (max-width: 1190px) {
     .navLogo h1 {
         font-size: 100%;
@@ -192,4 +193,4 @@ header {
     .navLogo h1 {
         font-size: 100%;
     }
-}
+} */

@@ -113,7 +113,8 @@
 #vitalSign strong{
     padding: 20px 0;
 }
- i {
+.fa-solid {
+    font-weight: 900;
     font-size: 50px;
 }
 #vitalP{
@@ -150,6 +151,9 @@
     border-radius: 5px;
     padding: 5px 20px;
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+#services{
+    display: block;
 }
 @media only screen and (max-width: 1180px) {
    #vitalP{

@@ -68,7 +68,7 @@ inputForm.addEventListener('submit', function (e) {
                 localStorage.setItem('users', JSON.stringify(usersData));
                 console.log(localStorage.getItem('users'));
                 Swal.fire({
-                    position: 'top-end',
+                    position: 'center',
                     icon: 'success',
                     title: 'Your account was created successfully',
                     showConfirmButton: false,

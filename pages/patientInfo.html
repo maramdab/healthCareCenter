@@ -25,10 +25,13 @@
                     <li><a href="../index.html" class="link active">Home</a></li>
                     <li><a href="./about.html" class="link">About Us</a></li>
                     <li><a href="./services.html" class="link">services</a></li>
-                    <li><a href="./patientInfo.html" class="link">Patient Info</a></li>
+                    <li><a href="./patientInfo.html" class="link" >Patient Info</a></li>
                     <li><a href="./contact.html" class="link">Contact Us</a></li>
 
                 </ul>
+            </div>
+            <div id="myUserName">
+                <i class="fa-regular fa-user"><span id="userName1"></span></i>
             </div>
             <div class="navBtn">
                 <a href="./login.html" id="loginLink"><button class="btn white-button" id="loginBtn"
@@ -50,16 +53,16 @@
                     <div id="personal">
                         <i class="fa-regular fa-circle-user"></i>
                         <strong>Personal Information</strong>
-                        <p>Patient Name: <span></span></p>
-                        <p>Date Of Birth: <span></span></p>
-                        <p>Contact Number: <span></span></p>
-                        <p>Address: <span></span></p>
-                        <p>Gender: <span></span></p>
+                        <p>Patient Name: <span id="name"></span></p>
+                        <p>Date Of Birth: <span id="dof"></span></p>
+                        <p>Contact Number: <span id="cn"></span></p>
+                        <p>Address: <span id="address"></span></p>
+                        <p>Gender: <span id="gender"></span></p>
                         <form id="genderForm">
-                            <label for="gender">Patient Gender: </label>
-                            <select name="" id="gender">
+                            <label for="gender1">Patient Gender: </label>
+                            <select name="gender1" id="gender">
                                 <option value="male">Male</option>
-                                <option value="">Female</option>
+                                <option value="female">Female</option>
                             </select>
                             <input type="submit" name="" id="genderBtn" value="Save">
                         </form>
@@ -96,9 +99,14 @@
                     <div id="appointmentDetail">
                         <i class="fa-regular fa-calendar-check"></i>
                         <strong>Appointment Detials</strong>
-                        <p>Date: <span></span></p>
-                        <p>Time: <span></span></p>
-                        <p>Selected Services: <span></span></p>
+                        <p>Date: <span id="appDate"></span></p>
+                        <p>Time: <span id="appTime"></span></p>
+                        <p>Selected Services:
+                             <span id="services1" style="display: block;"></span>
+                             <span id="services2" style="display: block;"></span>
+                             <span id="services3" style="display: block;"></span>
+                             <span id="services4" style="display: block;"></span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -154,6 +162,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../JS/navAndFooter.js"></script>
+    <script src="../JS/patientinfo.js"></script>
     
 </body>
 

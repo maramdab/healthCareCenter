@@ -14,7 +14,7 @@ body {
 }
 
 .wrapper {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -127,15 +127,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content:center;
+    max-width: 100%;
+   
 
     
 }
 #topFooter{
     display: flex;
-    justify-content: center;
-    gap: 10%;
-    padding-top: 30px;
+    justify-content:space-between;
+    padding: 10px 50px;
     border-bottom: 1px white solid;
+    max-width: 100%;
 }
 #topFooter h4{
     color: white;
@@ -174,12 +176,14 @@ body {
     border-bottom: 1px solid rgba(33, 33, 140);
 }
 #bottomFooter{
-color: #fff;
-padding: 10px;
-text-align: center;
-font-size: 10px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    }
+#socialMedia{
+    margin-left: 10px;
 }
-
 @media only screen and (max-width: 1190px) {
     .navLogo h1 {
         font-size: 100%;
@@ -226,6 +230,7 @@ font-size: 10px;
         height: 90vh;
         backdrop-filter: blur(20px);
         transition: .3s;
+        scroll-behavior: smooth;
     }
 
     .navMenu ul {
@@ -252,6 +257,43 @@ font-size: 10px;
     }
 }
 
+@media only screen and (max-width: 800px) {
+        #locationFooter{
+                max-width: 190px;
+                    width: 100%;
+        }
+        #pages{
+            max-width: 90px;
+            width: 100%;
+            padding-left: 10px;
+
+        }
+        #emergencyAndOpenHour{
+            max-width: 150px;
+            width: 100%;
+            padding-left: 10px;
+        }
+        #socialMedia{
+            max-width: 100px;
+            width: 100%;
+
+        }
+    }
+    @media only screen and (max-width: 550px) {
+        #footer{
+            font-size: 12px;
+        }
+        #pages ul li .link{
+            font-size: 10px;
+        }
+        #topFooter{
+            padding: 10px;
+        }
+        }
+ 
+    
+
+
 @media only screen and (max-width: 540px) {
     .wrapper {
         min-height: 100vh;
@@ -259,8 +301,43 @@ font-size: 10px;
 
 }
 
-/* @media only screen and (max-width: 380px) {
+@media only screen and (max-width: 550px) {
     .navLogo h1 {
-        font-size: 100%;
+        font-size: 20px;
     }
-} */
+    .navLogo img{
+        width: 80px;
+        height: 80px;
+        padding-top: 20px;
+    }
+        .navMenuBtn i{
+            font-size: 20px;
+        }
+}
+@media only screen and (max-width: 350px) {
+    .navLogo h1 {
+        font-size: 15px;
+    }
+
+    .navLogo img {
+        width: 70px;
+        height: 70px;
+        padding-top: 20px;
+    }
+
+    .navMenuBtn i {
+        font-size: 15px;
+    }
+    #footer{
+        font-size: 6px;
+    }
+    #topFooter h4{
+        font-size: 10px;
+    }
+      #pages ul li .link {
+             font-size: 6px;
+         }
+    .bx{
+        font-size: 6px;
+    }
+}

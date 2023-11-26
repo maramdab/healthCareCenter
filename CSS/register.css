@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 110vh;
+    padding: 120px 40px;
 }
 .formBox{
     position: relative;

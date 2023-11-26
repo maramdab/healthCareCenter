@@ -14,13 +14,14 @@ inputForm.addEventListener('submit', function (e) {
     var secondNameForm = document.getElementById('secondName').value;
     var phoneForm = document.getElementById("phoneNumber").value;
     var addressForm = document.getElementById("address").value;
-    var primary=document.getElementById("primaryCare").value;
-    var dental=document.getElementById("dentalCare").value;
-    var motherhood=document.getElementById("motherhood").value;
-    var lab=document.getElementById("labTests").value;
+    var primary=document.getElementById("primaryCare").checked;
+    var dental=document.getElementById("dentalCare").checked;
+    var motherhood=document.getElementById("motherhood").checked;
+    var lab=document.getElementById("labTests").checked;
     var date=document.getElementById('appointmentDate').value;
     var time=document.getElementById('time').value;
     var birthday=document.getElementById('birthday').value;
+    var emailAddress=document.getElementById('email').value;
    
    
     let patientInfo = {
@@ -33,7 +34,9 @@ inputForm.addEventListener('submit', function (e) {
             lab1:lab,
             date1:date,
             time1:time,
-            birthdaydate:birthday
+            birthdaydate:birthday,
+            email:emailAddress,
+            
 
         };
  
@@ -62,8 +65,18 @@ inputForm.addEventListener('submit', function (e) {
                         
                     }
                          if (sum<2){
-                         usersAppointmentData.push(patientInfo);
-                        localStorage.setItem('patients', JSON.stringify(usersAppointmentData));
+                                usersAppointmentData.push(patientInfo);
+                                localStorage.setItem('patients', JSON.stringify(usersAppointmentData));
+                                Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'Appointment Recieved',
+                                showConfirmButton: false,
+                                timer: 1500
+                                }).then(function () {
+                                window.location = "../pages/patientInfo.html";
+                                });
+
          
                             
                     }
@@ -100,3 +113,19 @@ inputForm.addEventListener('submit', function (e) {
 
    
 });
+
+function redirectApp(){
+    if(localStorage.getItem('email')==null){
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'You should Login First',
+            showConfirmButton: true,
+            timer: 7000
+        }).then(function () {
+            window.location = "../pages/login.html";
+            });
+        
+    }
+}
+redirectApp();
