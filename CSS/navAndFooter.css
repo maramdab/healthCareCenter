@@ -235,7 +235,7 @@ body {
 
     .navMenu {
         position: absolute;
-        top: -900px;
+        top: -1000px;
         flex-direction: column-reverse;
         justify-content: center;
         background: rgba(255, 255, 255, 0.2);
