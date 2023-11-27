@@ -113,7 +113,7 @@
 #vitalSign strong{
     padding: 20px 0;
 }
-.fa-solid {
+.fa-solid.fa-bed-pulse{
     font-weight: 900;
     font-size: 50px;
 }

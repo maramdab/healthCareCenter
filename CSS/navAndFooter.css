@@ -69,8 +69,12 @@ body {
 :active {
     border-bottom: 2px solid rgba(33, 33, 140);
 }
-
+.navBtn{
+    display: flex;
+    
+}
 .navBtn .btn {
+   
     width: 130px;
     height: 40px;
     font-weight: 500;
@@ -104,23 +108,27 @@ body {
 }
 #myUserName{
     display: none;
-    align-items: center;
-    position: relative;
-    right: -30px;
-    
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(33, 33, 140, 1);
+    padding-bottom: 15px;
+    margin: 30px 10px;
+
 }
 #myUserName i{
-    display: flex;
-    width: 130px;
-    height: 40px;
-    font-weight: 500;
-    background: rgba(33, 33, 140, 0.5);
-    border: none;
-    border-radius: 30px;
+    /* display: flex; */
+    /* width: 130px; */
+    /* height: 40px; */
+    /* font-weight: 500; */
+    /* background: rgba(33, 33, 140, 0.5); */
+    /* border: none; */
+    /* border-radius: 30px; */
     cursor: pointer;
     transition: 0.3s ease;
-    align-items: center;
-    padding-left: 20px;
+    /* align-items: center; */
+    /* padding-left: 20px; */
+        color: rgba(33, 33, 140, 1);
 }
 #footer{
     background-color:rgba(33, 33, 140, 0.5) ;
@@ -201,10 +209,11 @@ body {
     .navBtn .btn {
         width: 80px;
     }
-        .navMenu ul li .link {
-           font-size: 14px;
-            margin: 0 6px;
-        }
+    
+    .navMenu ul li .link {
+        font-size: 14px;
+        margin: 0 6px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
